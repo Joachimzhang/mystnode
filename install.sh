@@ -116,7 +116,7 @@ install_debian() {
 }
 
 prepare_sources_list() {
-    if [[ "$VERSION_CODENAME" == "buster" ]]; then
+    if [[ "$VERSION_CODENAME" == "bullseye" ]]; then
       echo "deb http://deb.debian.org/debian ${VERSION_CODENAME}-backports main" > /etc/apt/sources.list.d/backports.list
       apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 04EE7237B7D453EC
       apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 648ACFD622F3D138
